@@ -71,11 +71,11 @@ let GameManager = {
         button.addEventListener('click', GameManager.setFight);
         getActions.append(button);
         console.log(getActions);
-        // //let findVillianButton = document.createElement('button');
+        // let findVillianButton = document.createElement('button');
         // findVillianButton.textContent = 'Task: Find a villain!';
         // findVillianButton.onclick = GameManager.setFight();
         // findVillianButton.setAttribute('class', 'btn-prefight');
-        // //getHeader.append(findVillianButton);
+        // getHeader.append(findVillianButton);
         },
     setFight: function() {
         let getHeader = document.querySelector(".header");
