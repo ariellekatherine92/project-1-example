@@ -13,9 +13,9 @@ function Villain(villainType, health, mana, strength, agility, speed) {
     let villainAttack = function() {
         let calcBaseDamage;
         if (villain.mana > 0) {
-       calcBaseDamage = villain.strength * villain.mana/ 1000;
+            calcBaseDamage = villain.strength * villain.mana/ 1000;
         } else {
-        calcBaseDamage = villain.strength * villain.agility/ 1000;  
+            calcBaseDamage = villain.strength * villain.agility/ 1000;  
         }
         let offsetDamage = Math.floor(Math.random() * Math.floor(10));
         let calcOutputDamage = calcBaseDamage + offsetDamage;

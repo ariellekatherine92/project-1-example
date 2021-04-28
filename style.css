@@ -4,13 +4,38 @@ html,body {
   }
   
   body {
-    padding-top: 1em;
-    text-align: center;
-    background-color: black;
-    background-image: url("file:///Users/arieldelaura/Desktop/abb83d4af7efc003d0beb78c9817eb23.jpg"); 
-    background-size: cover;
-    background-repeat: space;
+   margin: 0;
+   padding: 0;
+   background:pink ;
+   background-image: url("file:///Users/arieldelaura/Desktop/Sailor%20Moon%20Crystal%20%20%20Sailor%20Moon%20Crystal%20Wallpaper%201920x1080%20(1).jpg");
   }
+  .slidershow {
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+  .navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+
+  .bar {
+    width: 50px;
+    height: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor:pointer;
+  }
+
   
   h1, h2 {
     font-family: cursive;
@@ -20,4 +45,111 @@ html,body {
 
   img {
       width: 160px;
+      border-radius: 1em;
   }
+
+  .interface {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .interface div {
+    width: 220px;
+    padding: 0 10px 0 20px;
+    background-color: pink;
+    border-radius: 1em;
+    text-decoration: none;
+    color: black;
+  }
+
+  .interface h3 {
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    padding: 12px 0 4px;
+    text-decoration: none;
+  }
+
+  .interface p {
+    font-family: arial;
+    font-size: 12px;
+    color: #d5c8af;
+    line-height: 20px;
+  }
+
+  .arena {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35vh;
+    visibility: hidden;
+  }
+
+  .villain {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #1b1b1b;
+  }
+  
+  .villain a {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .villain img {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .villain div {
+    width: 220px;
+    padding: 0 10px 0 20px;
+    background-color: #211510;
+  }
+  
+  .villain a:hover div {
+    background-color: #3c1d3d;
+  }
+  
+  .villain h3 {
+    font-family: 'Acme', sans-serif;
+    font-size: 22px;
+    padding: 12px 0 4px;
+  }
+  
+  .villain p {
+    font-family: arial;
+    font-size: 12px;
+    color: #d5c8af;
+    line-height: 20px;
+  }
+
+  button {
+    padding: 20px 25px;
+    font-size: 22px;
+    line-height: 40px;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right bottom);
+    border-radius: 5px;
+    border: 0px;
+    height: 60px;
+  }
+
+  .howToPlay{
+    text-align: center;
+    background:white;
+    font-size: 24px;
+    font-weight: 10px;
+  }
+
+
+  
