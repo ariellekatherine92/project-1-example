@@ -1,155 +1,209 @@
-html,body {
-    margin: 0;
-    padding: 0;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: pink;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* TODO: Move this image OFF of Desktop and into project folder */
+  /* background-image: url("file:///Users/arieldelaura/Desktop/Sailor%20Moon%20Crystal%20%20%20Sailor%20Moon%20Crystal%20Wallpaper%201920x1080%20(1).jpg"); */
+}
+
+/*** HEADER ***/
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background: grey;
+  align-items: center;
+}
+
+header .left {
+  padding: 1rem;
+  background: red;
+}
+
+header .center {
+  padding: 1rem;
+  text-align: center;
+  background: green;
+}
+
+header .right {
+  padding: 1rem;
+  text-align: right;
+  background: blue;
+}
+
+/*** SUB HEADER ***/
+.sub-header {
+  width: 100%;
+  text-align: center;
+  background: blueviolet;
+}
+
+/*** CHARACTER SELECTION ***/
+.character-selection {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.character-selection .left,
+.character-selection .right {
+  width: 20%;
+  cursor: pointer;
+  background: dimgray;
+}
+
+.character-selection .center {
+  width: 60%;
+  background: darkslategray;
+}
+
+.character-selection .characters-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.character-selection .prev-character,
+.character-selection .next-character {
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+}
+
+.character-selection .current-character {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+/*** FOOTER ***/
+footer {
+  background: antiquewhite;
+}
   
-  body {
-   margin: 0;
-   padding: 0;
-   background:pink ;
-   background-image: url("file:///Users/arieldelaura/Desktop/Sailor%20Moon%20Crystal%20%20%20Sailor%20Moon%20Crystal%20Wallpaper%201920x1080%20(1).jpg");
-  }
-  .slidershow {
-    width: 700px;
-    height: 400px;
-    overflow: hidden;
-  }
-  .middle{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-  }
-  .navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
 
-  .bar {
-    width: 50px;
-    height: 10px;
-    border: 2px solid white;
-    margin: 6px;
-    cursor:pointer;
-  }
 
+h1, h2 {
+  font-family: cursive;
+  color: hotpink;
+}
+
+/* TODO */
+img {
+  width: 160px;
+  border-radius: 1em;
+}
+
+.interface {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* TODO */
+.interface div {
+  width: 220px;
+  padding: 0 10px 0 20px;
+  background-color: pink;
+  border-radius: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+.interface h3 {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+  padding: 12px 0 4px;
+  text-decoration: none;
+}
+
+.interface p {
+  font-family: arial;
+  font-size: 12px;
+  color: #d5c8af;
+  line-height: 20px;
+}
+
+.arena {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35vh;
+  visibility: hidden;
+}
+
+.villain {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1b1b1b;
+}
   
-  h1, h2 {
-    font-family: cursive;
-    color: hotpink;
-  }
+.villain a {
+  display: flex;
+  flex-wrap: nowrap;
+}
   
-
-  img {
-      width: 160px;
-      border-radius: 1em;
-  }
-
-  .interface {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .interface div {
-    width: 220px;
-    padding: 0 10px 0 20px;
-    background-color: pink;
-    border-radius: 1em;
-    text-decoration: none;
-    color: black;
-  }
-
-  .interface h3 {
-    font-family: 'Acme', sans-serif;
-    font-size: 22px;
-    padding: 12px 0 4px;
-    text-decoration: none;
-  }
-
-  .interface p {
-    font-family: arial;
-    font-size: 12px;
-    color: #d5c8af;
-    line-height: 20px;
-  }
-
-  .arena {
-    width: 100%;
-    height: 250px;
-    background-color: white;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 35vh;
-    visibility: hidden;
-  }
-
-  .villain {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #1b1b1b;
-  }
+.villain img {
+  width: 120px;
+  height: 120px;
+}
   
-  .villain a {
-    display: flex;
-    flex-wrap: nowrap;
-  }
+.villain div {
+  width: 220px;
+  padding: 0 10px 0 20px;
+  background-color: #211510;
+}
   
-  .villain img {
-    width: 120px;
-    height: 120px;
-  }
+.villain a:hover div {
+  background-color: #3c1d3d;
+}
   
-  .villain div {
-    width: 220px;
-    padding: 0 10px 0 20px;
-    background-color: #211510;
-  }
+.villain h3 {
+  font-family: 'Acme', sans-serif;
+  font-size: 22px;
+  padding: 12px 0 4px;
+}
   
-  .villain a:hover div {
-    background-color: #3c1d3d;
-  }
-  
-  .villain h3 {
-    font-family: 'Acme', sans-serif;
-    font-size: 22px;
-    padding: 12px 0 4px;
-  }
-  
-  .villain p {
-    font-family: arial;
-    font-size: 12px;
-    color: #d5c8af;
-    line-height: 20px;
-  }
+.villain p {
+  font-family: arial;
+  font-size: 12px;
+  color: #d5c8af;
+  line-height: 20px;
+}
 
-  button {
-    padding: 20px 25px;
-    font-size: 22px;
-    line-height: 40px;
-    min-width: 150px;
-    text-align: center;
-    cursor: pointer;
-    background: linear-gradient(to right bottom);
-    border-radius: 5px;
-    border: 0px;
-    height: 60px;
-  }
+button {
+  padding: 20px 25px;
+  font-size: 22px;
+  line-height: 40px;
+  min-width: 150px;
+  text-align: center;
+  cursor: pointer;
+  background: linear-gradient(to right bottom); /* TODO */
+  border-radius: 5px;
+  border: 0px;
+  height: 60px;
+}
 
-  .howToPlay{
-    text-align: center;
-    background:white;
-    font-size: 24px;
-    font-weight: 10px;
-  }
-
-
-  
+.how-to-play {
+  text-align: center;
+  background:white;
+  font-size: 24px;
+  font-weight: 10px;
+}

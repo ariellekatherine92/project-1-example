@@ -9,7 +9,7 @@ let GameManager = {
         let imgName;
 
         switch (classType) {
-        case "Sailor Moon":
+        case "moon":
             player = new Player(classType, 350, 500, 650, 150, 100);
             imgName = 'SailorMoonMainImage.png';
             moveset = [{
@@ -20,7 +20,7 @@ let GameManager = {
                 pow: 450,
             }];
             break;
-        case "Sailor Jupiter":
+        case "jupiter":
             player = new Player(classType, 350, 300, 500, 250, 150);
             imgName = 'sailor%20jupiter.jpg';
             moveset = [{
@@ -31,7 +31,7 @@ let GameManager = {
                 pow: 400,
             }];
             break;
-        case "Sailor Mars":
+        case "mars":
             player = new Player(classType, 350, 400, 350, 350, 200);
             imgName = 'sailor%20mars.png';
             moveset = [{
@@ -42,7 +42,7 @@ let GameManager = {
             pow: 400,
         }];
             break;
-        case "Sailor Neptune":
+        case "neptune":
             player = new Player(classType, 350, 450, 550, 450, 400);
             imgName = 'sailor%20neptune.png';
             moveset = [{
@@ -53,7 +53,7 @@ let GameManager = {
                 pow: 400,
             }];
             break;
-        case "Sailor Chibiusa":
+        case "chibiusa":
             player = new Player(classType, 350, 250, 150, 250, 200);
             imgName = 'sailorchibiusa.jpg';
             moveset = [{
@@ -64,7 +64,7 @@ let GameManager = {
                 pow: 350,
             }];
             break;
-        case "Sailor Pluto":
+        case "pluto":
             player = new Player(classType, 350, 550, 700, 350, 300);
             imgName = 'sailorpluto.jpeg';
             moveset = [{
@@ -75,7 +75,7 @@ let GameManager = {
                 pow: 400,
             }];
             break;
-        case "Sailor Saturn":
+        case "saturn":
             player = new Player(classType, 350, 750, 800, 450, 300);
             imgName = 'sailorsaturn.jpeg';
             moveset = [{
@@ -86,7 +86,7 @@ let GameManager = {
                 pow: 400,
             }];
             break;
-        case "Sailor Mercury":
+        case "mercury":
             player = new Player(classType, 350, 400, 350, 550, 400);
             imgName = 'sailormercury.jpg';
             moveset = [{
@@ -97,7 +97,7 @@ let GameManager = {
                 pow: 350,
             }];
             break;
-        case "Sailor Venus":
+        case "venus":
             player = new Player(classType, 350, 400, 400, 550, 400);
             imgName = 'sailorvenus.png';
             moveset = [{
@@ -108,7 +108,7 @@ let GameManager = {
                 pow: 400,
             }];
             break;
-        case "Sailor Uranus":
+        case "uranus":
             player = new Player(classType, 350, 450, 600, 550, 400);
             imgName = 'sailoruranus.jpg';
             moveset = [{
