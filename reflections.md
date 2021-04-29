@@ -41,8 +41,11 @@ Neaten everything up and add some more features to the screens to make it more a
 - [x] Do you have any blockers?
 No blockers at this time.
 1. RESPONSE
+I got my main screen operative which transitions nicely into my battle screen.
 2. RESPONSE
+Today I need to clean up everything and make the game readme. I also need to make my reset button/deploy online.
 3. RESPONSE
+Getting my battle screen to working capacity/cleaned up and looking nice.
 
 # Thursday
 - [x] What did you achieve yesterday?
