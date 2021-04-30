@@ -8,8 +8,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  /* TODO: Move this image OFF of Desktop and into project folder */
-  /* background-image: url("file:///Users/arieldelaura/Desktop/Sailor%20Moon%20Crystal%20%20%20Sailor%20Moon%20Crystal%20Wallpaper%201920x1080%20(1).jpg"); */
+  background-image: url("file:///Users/arieldelaura/Desktop/Sailor%20Moon%20Crystal%20%20%20Sailor%20Moon%20Crystal%20Wallpaper%201920x1080%20(1).jpg");
+  font-family: 'BioRhyme Expanded', serif;
 }
 
 /*** HEADER ***/
@@ -18,32 +18,38 @@ header {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  background: grey;
   align-items: center;
+  font-family: 'BioRhyme Expanded', serif;
 }
 
 header .left {
   padding: 1rem;
-  background: red;
+  background-color: rgba(255, 245, 238, 0.8);
+  border-radius: 1em;
+  font-family: 'BioRhyme Expanded', serif;
 }
 
 header .center {
   padding: 1rem;
   text-align: center;
-  background: green;
+  background-color: rgba(255, 245, 238, 0.8);
+  border-radius: 1em;
+  font-family: 'BioRhyme Expanded', serif;
 }
 
 header .right {
   padding: 1rem;
   text-align: right;
-  background: blue;
+  background-color: rgba(255, 245, 238, 0.8);
+  border-radius: 1em;
+  font-family: 'BioRhyme Expanded', serif;
 }
 
 /*** SUB HEADER ***/
 .sub-header {
   width: 100%;
   text-align: center;
-  background: blueviolet;
+  font-family: 'BioRhyme Expanded', serif;
 }
 
 /*** CHARACTER SELECTION ***/
@@ -58,12 +64,10 @@ header .right {
 .character-selection .right {
   width: 20%;
   cursor: pointer;
-  background: dimgray;
 }
 
 .character-selection .center {
   width: 60%;
-  background: darkslategray;
 }
 
 .character-selection .characters-wrapper {
@@ -88,125 +92,65 @@ header .right {
 
 /*** FOOTER ***/
 footer {
-  background: antiquewhite;
-}
-  
-
-
-h1, h2 {
-  font-family: cursive;
-  color: hotpink;
-}
-
-/* TODO */
-img {
-  width: 160px;
-  border-radius: 1em;
-}
-
-.interface {
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* TODO */
-.interface div {
-  width: 220px;
-  padding: 0 10px 0 20px;
-  background-color: pink;
-  border-radius: 1em;
-  text-decoration: none;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+  font-size: 30px;
   color: black;
-}
-
-.interface h3 {
-  font-family: 'Acme', sans-serif;
-  font-size: 22px;
-  padding: 12px 0 4px;
-  text-decoration: none;
-}
-
-.interface p {
-  font-family: arial;
-  font-size: 12px;
-  color: #d5c8af;
-  line-height: 20px;
-}
-
-.arena {
-  width: 100%;
-  height: 250px;
-  background-color: white;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 35vh;
-  visibility: hidden;
-}
-
-.villain {
-  padding: 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #1b1b1b;
-}
-  
-.villain a {
-  display: flex;
-  flex-wrap: nowrap;
-}
-  
-.villain img {
-  width: 120px;
-  height: 120px;
-}
-  
-.villain div {
-  width: 220px;
-  padding: 0 10px 0 20px;
-  background-color: #211510;
-}
-  
-.villain a:hover div {
-  background-color: #3c1d3d;
-}
-  
-.villain h3 {
-  font-family: 'Acme', sans-serif;
-  font-size: 22px;
-  padding: 12px 0 4px;
-}
-  
-.villain p {
-  font-family: arial;
-  font-size: 12px;
-  color: #d5c8af;
-  line-height: 20px;
-}
-
-button {
-  padding: 20px 25px;
-  font-size: 22px;
-  line-height: 40px;
-  min-width: 150px;
-  text-align: center;
-  cursor: pointer;
-  background: linear-gradient(to right bottom); /* TODO */
-  border-radius: 5px;
-  border: 0px;
-  height: 60px;
-}
-
-.how-to-play {
-  text-align: center;
-  background:white;
-  font-size: 24px;
-  font-weight: 10px;
+  background-color: rgba(255, 245, 238, 0.8);
   border-radius: 1em;
-  border: solid black;
-  font-family: 'Crimson Text', serif;
+  font-family: 'BioRhyme Expanded', serif;
+
 }
+
+/** FIGHT SCREEN **/
+#fight-screen {
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#fight-screen .scout-container {
+  display: flex;
+  flex-direction: row;
+  border-radius: 1em;
+  font-size: 30px;
+  color: antiquewhite;
+  border-radius: 1em;
+}
+
+#fight-screen .villain-container {
+  font-size: 30px;
+  color: antiquewhite;
+  border-radius: 1em;
+}
+
+#fight-screen .villain-health {
+  color: black;
+
+}
+
+#fight-screen .scout-image,
+#fight-screen .villain-image {
+  width: 400px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.game-info {
+  background: white;
+  font-size: 20px;
+  border-radius: 1em;
+
+}
+
+#moveset-container {
+  font-size: 15px;
+  background: pink;
+}
+
+
+
+

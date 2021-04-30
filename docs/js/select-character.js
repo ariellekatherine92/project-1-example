@@ -1,18 +1,3 @@
-const scouts = {
-    jupiter: { name: 'Sailor Jupiter', img: 'jupiter.jpg' },
-    chibiusa: { name: 'Sailor Chibiusa', img: 'chibiusa.jpg' },
-    mars: { name: 'Sailor Mars', img: 'mars.png' },
-    mercury: { name: 'Sailor Mercury', img: 'mercury.jpg' },
-    moon: { name: 'Sailor Moon', img: 'moon.png' },
-    neptune: { name: 'Sailor Neptune', img: 'neptune.png' },
-    pluto: { name: 'Sailor Pluto', img: 'pluto.jpeg' },
-    saturn: { name: 'Sailor Saturn', img: 'saturn.jpeg' },
-    uranus: { name: 'Sailor Uranus', img: 'uranus.jpg' },
-    venus: { name: 'Sailor Venus', img: 'venus.png' },
-};
-
-const scoutsArray = Object.keys(scouts);
-
 const selectScreen = document.getElementById('select-screen');
 const fightScreen = document.getElementById('fight-screen');
 const selectLeft = document.querySelector('.character-selection .left');
@@ -80,7 +65,7 @@ selectRight.addEventListener('click', () => {
 // Start game with selected character
 startGame.addEventListener('click', () => {
     selectScreen.style.display = 'none';
-    fightScreen.style.display = 'block';
+    fightScreen.style.display = 'flex';
 
-    GameManager.setGameStart(selected);
+    startFight(selected);
 });
